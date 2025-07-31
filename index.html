@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Student Registration System" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg" href="assets/logo.svg">
+
+</head>
+<body>
+    <header class="main-header">
+        <img src="assets/logo.svg" alt="Logo" class="logo" />
+        <div>
+            <h1>Student Registration</h1>
+            <p>Effortlessly manage student data.</p>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <form id="studentForm">
+                <h2>Register Student</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact No.</label>
+                    <input type="text" id="contact" required/>
+                </div>
+                <button type="submit" class="btn">Add Student</button>
+            </form>
+        </section>
+        <section class="table-section">
+            <h2>Registered Students</h2>
+            <div class="table-container">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
